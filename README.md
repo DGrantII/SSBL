@@ -7,5 +7,6 @@ I am aware that the code may not be the prettiest or most optimized, but it stan
 ## Features
 
 Front-End: Vanilla HTML, JavaScript, and CSS
+
 Back-End: Node.js, Express.js, Mongoose, MongoDB (with data stored on a local server, not visible)
    
