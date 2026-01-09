@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+h6 {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+button.dropbtn {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+button#awayButton {
+    float: left;
+}
+
+button#homeButton {
+    float: right;
+}
+
+div#homeDropdown {
+    right: 0px;
+}
+
+div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: aliceblue;
+    min-width: 160px;
+    height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+}
+
+div.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100%;
+    height: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: auto;
+}
+
+div.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+div.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: x-large;
+}
+
+div.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+div.dropdown-content2 a:hover {
+    background-color: #f1f1f1
+}
+
+div.dropdown:hover .dropbtn {
+    background-color: #0022bb;
+}
+
+div#home-div {
+    float: right;
+}
+
+div.homeDropdown {
+    right: 0px;
+}
+
+div#mainWrapper {
+    border: 20px double rgb(82, 128, 255);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    max-height: 310px;
+}
+
+div#mainWrapper > img {
+    width: 150px;
+    height: auto;
+}
+
+table {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+td.imageWrapper {
+    width: 45%;
+}
+
+td#versus {
+    width: 10%;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+p#location {
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}

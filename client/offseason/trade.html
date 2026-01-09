@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/input.css" />
+    <link rel="stylesheet" href="../CSS/lock-mvps.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JavaScript/trade.js" defer></script>
+    <title>Trade</title>
+</head>
+<body>
+    <nav>
+        <a href="../">Home</a>
+        <a href="./lock-mvps.html">Offseason</a>
+        <a class="active" href="./trade.html">Trade</a>
+        <a href="./all-teams.html">All Teams</a>
+        <a href="./reset-season.html">Reset Season</a>
+        <a href="./free-agents.html">Free Agents</a>
+    </nav>
+    <div id="message">
+
+    </div>
+    <div id="form">
+        <p id="prompt">Select the team's best player</p>
+        <form id="inputForm">
+            <input type="radio" id="p1" class="radioInput" name="best" required />
+            <label for="p1" class="radioLabel"></label>
+            <input type="radio" id="p2" class="radioInput" name="best" required />
+            <label for="p2" class="radioLabel"></label>
+            <input type="radio" id="p3" class="radioInput" name="best" required />
+            <label for="p3" class="radioLabel"></label>
+            <br /><br />
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+    </div>
+</body>
+</html>

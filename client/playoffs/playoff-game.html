@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/dropdown.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../JavaScript/current-game.js" defer></script>
+    <script src="../JavaScript/playoff.js"></script>
+    <title>Current Game</title>
+</head>
+<body onload="wakeLock(), loadPlayoffDropdown(), setInitialPlayoffTeams()">
+    <nav>
+        <a href="../">Home</a>
+        <a href="./bracket.html">Playoff Bracket</a>
+        <a href="./set-round-1.html">Set Round 1</a>
+        <a class="active" href="./playoff-game.html">Current Game</a>
+        <a href="./round-result.html">Round Results</a>
+        <a href="./champions.html">Champions</a>
+        <a href="./playoff-clear.html">Clear</a>
+    </nav>
+    <div class="dropdown">
+        <button class="dropbtn" id="awayButton" onclick="reveal('awayDropdown')">Away</button>
+        <div class="dropdown-content" id="awayDropdown">
+            <a onclick="selectChampionsBattle('awayLogo', 'away', 'http://localhost:3000/images/AllStars.png')">All-Stars</a>
+            <a onclick="selectChampionsBattle('awayLogo', 'away', 'http://localhost:3000/images/Elites.png')">Elites</a>
+        </div>
+    </div>
+    <div class="dropdown" id="home-div">
+        <button class="dropbtn" id="homeButton" onclick="reveal('homeDropdown')">Home</button>
+        <div class="dropdown-content" id="homeDropdown">
+            <a onclick="selectChampionsBattle('homeLogo', 'home', 'http://localhost:3000/images/AllStars.png')">All-Stars</a>
+            <a onclick="selectChampionsBattle('homeLogo', 'home', 'http://localhost:3000/images/Elites.png')">Elites</a>
+        </div>
+    </div>
+    <div id="mainWrapper" onclick="hide('awayDropdown', 'homeDropdown')">
+        <img src="http://localhost:3000/images/SSBLlogo.png" alt="SSBL Logo" />
+        <table>
+            <tr>
+                <td class="imageWrapper">
+                    <img id="awayLogo" src="http://localhost:3000/images/QuestionMark.png" />
+                </td>
+                <td id="versus">V.S</td>
+                <td class="imageWrapper">
+                    <img id="homeLogo" src="http://localhost:3000/images/QuestionMark.png" />
+                </td>
+            </tr>
+            <tr>
+                <td class="imageWrapper">
+                    <p id="away"></p>
+                </td>
+                <td></td>
+                <td class="imageWrapper">
+                    <p id="home"></p>
+                </td>
+            </tr>
+        </table>
+        <div class="dropdown" style="display: block; margin: 0 auto; width: 45%;">
+            <div class="dropdown-content2" id="placeDropdown">
+                <p style="text-align: center">
+                    <a onclick="place('King of Fighters Stadium', 'placeDropdown'),
+                                setLocationCookie('King of Fighters Stadium')">King of Fighters Stadium</a>
+                    <a onclick="place('Pokemon Stadium', 'placeDropdown'),
+                                setLocationCookie('Pokemon Stadium')">Pokemon Stadium</a>
+                    <a onclick="place('Pokemon Stadium 2', 'placeDropdown'),
+                                setLocationCookie('Pokemon Stadium 2')">Pokemon Stadium 2</a>
+                    <a onclick="place('Spring Stadium', 'placeDropdown'),
+                                setLocationCookie('Spring Stadium')">Spring Stadium</a>
+                    <a onclick="place('Wuhu Island', 'placeDropdown'),
+                                setLocationCookie('Wuhu Island')">Wuhu Island</a>
+                    <a onclick="place('Arena Ferox', 'placeDropdown'),
+                                setLocationCookie('Arena Ferox')">Arena Ferox</a>
+                    <a onclick="place('Final Destination', 'placeDropdown'),
+                                setLocationCookie('Final Destination')">Final Destination</a>
+                    <a onclick="place('Coliseum', 'placeDropdown'),
+                                setLocationCookie('Coliseum')">Coliseum</a>
+                    <a onclick="place('Boxing Ring', 'placeDropdown'),
+                                setLocationCookie('Boxing Ring')">Boxing Ring</a>
+                </p>
+            </div>
+            <p id="location" onclick="reveal('placeDropdown')">Final Destination</p>
+        </div>
+    </div>
+</body>
+</html>

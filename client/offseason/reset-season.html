@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/lock-mvps.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JavaScript/reset.js"></script>
+    <title>Reset Season</title>
+</head>
+<body>
+    <nav>
+        <a href="../">Home</a>
+        <a href="./lock-mvps.html">Offseason</a>
+        <a href="./trade.html">Trade</a>
+        <a href="./all-teams.html">All Teams</a>
+        <a class="active" href="./reset-season.html">Reset Season</a>
+        <a href="./free-agents.html">Free Agents</a>
+    </nav>
+    <div id="message">
+        <p>
+            When ready, click <span id="link" onclick="reset()">here</span> to reset the
+            season stats and set the next season's schedule
+        </p>
+    </div>
+    <div id="finished">
+        <p id="result"></p>
+    </div>
+</body>
+</html>

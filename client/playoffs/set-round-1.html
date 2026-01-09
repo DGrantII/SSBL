@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/playoff.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../JavaScript/playoff.js" defer></script>
+    <title>Set Round 1</title>
+</head>
+<body>
+    <nav>
+        <a href="../">Home</a>
+        <a href="./bracket.html">Playoff Bracket</a>
+        <a class="active" href="./set-round-1.html">Set Round 1</a>
+        <a href="./playoff-game.html">Current Game</a>
+        <a href="./round-result.html">Round Results</a>
+        <a href="./champions.html">Champions</a>
+        <a href="./playoff-clear.html">Clear</a>
+    </nav>
+    <div id="message">
+        <p>To set the first round of the playoffs, click <span id="link" onclick="setRound1()">here</span></p>
+        <p>If the first round is already set, go back to the bracket page</p>
+    </div>
+    <div id="result">
+        <p>The first round of the playoffs has been set</p>
+    </div>
+</body>
+</html>

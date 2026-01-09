@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/input.css" />
+    <link rel="stylesheet" href="../CSS/playoff.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JavaScript/playoff.js"></script>
+    <title>Round Result</title>
+</head>
+<body onload="prepareForm()">
+    <nav>
+        <a href="../">Home</a>
+        <a href="./bracket.html">Playoff Bracket</a>
+        <a href="./set-round-1.html">Set Round 1</a>
+        <a href="./playoff-game.html">Current Game</a>
+        <a class="active" href="./round-result.html">Round Results</a>
+        <a href="./champions.html">Champions</a>
+        <a href="./playoff-clear.html">Clear</a>
+    </nav>
+    <p id="output"></p>
+    <form id="inputForm">
+        <label for="round1">Round 1:</label>
+        <input type="radio" id="round1" name="round" value="round1" />
+        <label for="round2">Round 2:</label>
+        <input type="radio" id="round2" name="round" value="round2" />
+        <label for="semis">Semi-Finals:</label>
+        <input type="radio" id="semis" name="round" value="semis" /><br />
+        <label for="champions">Champion's Battle:</label>
+        <input type="radio" id="champions" name="round" value="champions" />
+        <label for="finals">Finals:</label>
+        <input type="radio" id="finals" name="round" value="finals" />
+        <br /><br />
+        <input class="playoffs" id="winner" name="winner" list="teams" placeholder="Winning Team" />
+        <strong>Defeated</strong>
+        <input class="playoffs" id="loser" name="loser" list="teams" placeholder="Losing Team" />
+        <br /><br />
+        <input type="submit" name="submit" value="Submit" />
+        <datalist id="teams"></datalist>
+    </form>
+</body>
+</html>

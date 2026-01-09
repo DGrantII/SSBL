@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/input.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../JavaScript/modify.js" defer></script>
+    <title>Modify Player</title>
+</head>
+<body onload="submitEvent('players'), getPlayerNames()">
+    <nav>
+        <a href="../">Home</a>
+        <a href="./modify.html">Modify</a>
+        <a href="./team-change.html">Teams</a>
+        <a class="active" href="./player-change.html">Players</a>
+        <a href="./schedule-change.html">Schedule</a>
+    </nav>
+    <h1>Modify Player Data</h1>
+    <p id="output"></p>
+    <form class="modifyForm" id="inputForm">
+        <p class="formHeader">What data are you modifying?</p>
+        <datalist id="playerList"></datalist>
+        <label for="name">Name:</label>
+        <input type="radio" id="name" name="modifyType" value="name" onclick="playerLevel1('Name')"/>
+        <label for="kos">KOs:</label>
+        <input type="radio" id="kos" name="modifyType" value="kos" onclick="playerLevel1('KOs')"/>
+        <label for="damage">Damage:</label>
+        <input type="radio" id="damage" name="modifyType" value="damage" onclick="playerLevel1('Damage')"/>
+        <div class="toggleDiv" id="level1"></div>
+        <div class="toggleDiv" id="level2"></div>
+    </form>
+</body>
+</html>

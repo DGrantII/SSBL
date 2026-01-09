@@ -1,0 +1,45 @@
+table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-size: x-large;
+}
+
+tr, td {
+    text-align: center;
+}
+
+#printButton {
+    background-color: blue;
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: blue;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+#printButton:hover {
+    background-color: white;
+    color: blue;
+    border-color: blue;
+}
+
+p {
+    font-size: xx-large;
+    text-align: center;
+}
+
+td.away {
+    text-align: right;
+}
+
+td.home {
+    text-align: left;
+}
+
+div#message {
+    display: none;
+}

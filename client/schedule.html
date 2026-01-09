@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/schedule.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JavaScript/schedule.js" defer></script>
+    <title>Schedule</title>
+</head>
+<body>
+    <nav>
+        <a href="./">Home</a>
+        <a href="/modify-stats.html">Modify Stats</a>
+        <a href="/current-game.html">Current Game</a>
+        <a class="active" href="/schedule.html">Schedule</a>
+        <a href="/team-rankings.html">Team Rankings</a>
+        <a href="/player-rankings.html">Player Rankings</a>
+        <a href="/all-teams.html">All Teams</a>
+        <a id="pdf" onclick="generatePDF()">PDF</a>
+        <a class="extras" href="/archives/archives.html">Archives</a>
+        <a class="extras" href="/modify/modify.html">Modify</a>
+        <a class="extras" href="/offseason/lock-mvps.html">Offseason</a>
+        <a class="extras" href="/playoffs/bracket.html">Playoffs</a>
+    </nav>
+    <div id="message">
+        <p><strong>PDF has been downloaded</strong></p>
+    </div>
+    <div id="mySchedule">
+        <table id="output"></table>
+    </div>
+</body>
+</html>

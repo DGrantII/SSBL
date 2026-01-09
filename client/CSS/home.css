@@ -1,0 +1,31 @@
+div#placeholder {
+    display: none;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+table {
+    width: 30%;
+    font-size: 2vw;
+    position: absolute;
+    line-height: 3vw;
+}
+
+table#topTeams {
+    left: 0px;
+    text-align: right;
+}
+
+table#topPlayers {
+    right: 0px;
+}

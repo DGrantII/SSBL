@@ -1,0 +1,14 @@
+services:
+  server:
+    build:
+      context: ./server
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://devinjr:kj_john14_6@192.168.0.26:28022/ssblDB?authSource=ssblDB
+    ports:
+      - 3000:3000
+  client:
+    build:
+      context: ./client
+    ports:
+      - 8080:80

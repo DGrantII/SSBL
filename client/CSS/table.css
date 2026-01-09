@@ -1,0 +1,89 @@
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    position: relative;
+    margin-top: 60px;
+    border: 3px solid blue;
+    font-size: 40px;
+    width: fit-content;
+    border-spacing: 5px;
+}
+
+thead {
+    background-color: blue;
+    color: white;
+}
+
+td {
+    text-align: center;
+    padding: 10px;
+}
+
+th {
+    background-color: aliceblue;
+}
+
+table a {
+    text-decoration: none;
+    color: black;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+img.change {
+    width: 30px;
+}
+/* For info page */
+
+img {
+    max-width: 10em;
+    max-height: 10em;
+}
+
+tbody#teamInfo td {
+    border: 2px solid black;
+}
+
+tr.subHeader {
+    background-color: lightgrey;
+}
+
+tbody#data-output tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody#data-output tr:nth-child(odd) {
+    background-color: #efefff;
+}
+
+/* For archive pages */
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#archiveTable {
+    position: relative;
+    margin-top: 60px;
+    font-size: 40px;
+    border-spacing: 5px;
+    border-collapse: collapse;
+}
+
+table#archiveTable td {
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    border-bottom: 2px solid lightgrey;
+}
+
+table#archiveTable img {
+    max-width: 150px;
+    max-height: 150px;
+}

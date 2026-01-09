@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/input.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../JavaScript/input.js" defer></script>
+    <title>Modify Stats</title>
+</head>
+<body>
+    <nav>
+        <a href="./">Home</a>
+        <a class="active" href="/modify-stats.html">Modify Stats</a>
+        <a href="/current-game.html">Current Game</a>
+        <a href="/schedule.html">Schedule</a>
+        <a href="/team-rankings.html">Team Rankings</a>
+        <a href="/player-rankings.html">Player Rankings</a>
+        <a href="/all-teams.html">All Teams</a>
+        <a class="extras" href="/archives/archives.html">Archives</a>
+        <a class="extras" href="/modify/modify.html">Modify</a>
+        <a class="extras" href="/offseason/lock-mvps.html">Offseason</a>
+        <a class="extras" href="/playoffs/bracket.html">Playoffs</a>
+    </nav>
+    <p id="output"></p>
+    <form id="inputForm">
+        <div id="leftTeam">
+            <input class="teams" id="l_name" name="l_name" list="teams" placeholder="Left Side Team" required  />
+            <br /><br />
+            <label for="l_team">Did team win? </label>
+            <input type="radio" id="l_team" name="winningTeam" value="l_team" required/>
+            <br /><br />
+            <input class="players" id="l_player1" name="l_player1" list="players" placeholder="Player 1" required  />
+            <br /><br />
+            <label for="l_p1kos">KOs: </label>
+            <input name="l_p1kos" type="number" min="0" max="16" required />
+            <label for="l_p1damage">Damage: </label>
+            <input name="l_p1damage" type="number" min="16" required />
+            <br /><br />
+            <input class="players" id="l_player2" name="l_player2" list="players" placeholder="Player 2" required  />
+            <br /><br />
+            <label for="l_p2kos">KOs: </label>
+            <input name="l_p2kos" type="number" min="0" max="16" required />
+            <label for="l_p2damage">Damage: </label>
+            <input name="l_p2damage" type="number" min="16" required />
+            <br /><br />
+            <input class="players" id="l_player3" name="l_player3" list="players" placeholder="Player 3" required />
+            <br /><br />
+            <label for="l_p3kos">KOs: </label>
+            <input name="l_p3kos" type="number" min="0" max="16" required />
+            <label for="l_p3damage">Damage: </label>
+            <input name="l_p3damage" type="number" min="16" required />
+        </div>
+        <div id="rightTeam">
+            <input class="teams" id="r_name" name="r_name" list="teams" placeholder="Right Side Team" required />
+            <br /><br />
+            <label for="r_team">Did team win? </label>
+            <input type="radio" id="r_team" name="winningTeam" value="r_team" required/>
+            <br /><br />
+            <input class="players" id="r_player1" name="r_player1" list="players" placeholder="Player 1" required />
+            <br /><br />
+            <label for="r_p1kos">KOs: </label>
+            <input name="r_p1kos" type="number" min="0" max="16" required />
+            <label for="r_p1damage">Damage: </label>
+            <input name="r_p1damage" type="number" min="16" required />
+            <br /><br />
+            <input class="players" id="r_player2" name="r_player2" list="players" placeholder="Player 2" required />
+            <br /><br />
+            <label for="r_p2kos">KOs: </label>
+            <input name="r_p2kos" type="number" min="0" max="16" required />
+            <label for="r_p2damage">Damage: </label>
+            <input name="r_p2damage" type="number" min="16" required />
+            <br /><br />
+            <input class="players" id="r_player3" name="r_player3" list="players" placeholder="Player 3" required />
+            <br /><br />
+            <label for="r_p3kos">KOs: </label>
+            <input name="r_p3kos" type="number" min="0" max="16" required />
+            <label for="r_p3damage">Damage: </label>
+            <input name="r_p3damage" type="number" min="16" required />
+        </div>
+        <datalist id="teams"></datalist>
+        <datalist id="players"></datalist>
+        <div id="buttons">
+            <input type="submit" name="submit" /><br /><br />
+            <input id="reset" type="reset" name="reset" />
+        </div>
+    </form>
+    <p>Once the week is finished, click <a onclick="rank()">here</a> to rank the teams/players.</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-size: 1.5em;
+}
+
+form {
+    margin-top: 10%;
+}
+
+input.playoffs {
+    width: 40%;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+span#link {
+    color: blue;
+}
+
+span#link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+span#link:active {
+    color: mediumpurple;
+}
+
+div {
+    text-align: center;
+}
+
+div#result {
+    display: none;
+}

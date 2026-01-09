@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/home.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JavaScript/icon-roll.js" defer ></script>
+    <script src="../JavaScript/ranking.js"></script>
+    <title>Home</title>
+    <style>
+        canvas {
+            width: 100%;
+        }
+    </style>
+</head>
+<body onload="topTeams(), topPlayers()">
+    <nav>
+        <a class="active" href="./">Home</a>
+        <a href="/modify-stats.html">Modify Stats</a>
+        <a href="/current-game.html">Current Game</a>
+        <a href="/schedule.html">Schedule</a>
+        <a href="/team-rankings.html">Team Rankings</a>
+        <a href="/player-rankings.html">Player Rankings</a>
+        <a href="/all-teams.html">All Teams</a>
+        <audio controls autoplay>
+            <source src="/SSBLTheme.mp3" type="audio/mp3" />
+        </audio>
+        <a class="extras" href="/archives/archives.html">Archives</a>
+        <a class="extras" href="/modify/modify.html">Modify</a>
+        <a class="extras" href="/offseason/lock-mvps.html">Offseason</a>
+        <a class="extras" href="/playoffs/bracket.html">Playoffs</a>
+    </nav>
+    <canvas id="teamRoll1"></canvas>
+    <table id="topTeams"></table>
+    <table id="topPlayers"></table>
+    <img src="http://localhost:3000/images/SSBLlogo.png" />
+    <canvas id="teamRoll2"></canvas>
+    <div id="placeholder"></div>
+</body>
+</html>

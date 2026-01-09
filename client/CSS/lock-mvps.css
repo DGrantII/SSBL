@@ -1,0 +1,34 @@
+p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+span#link {
+    color: blue;
+}
+
+span#link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div#form, div#message, div#finished, div#result {
+    width: 100%;
+}
+
+div#form {
+    display: none;
+}
+
+div#finished {
+    display: none;
+}
+
+input.mvps {
+    width: 25%;
+}
+
+div#result {
+    display: none;
+}

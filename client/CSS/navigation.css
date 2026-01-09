@@ -1,0 +1,48 @@
+nav {
+    overflow: auto;
+    background-color: darkblue;
+    color: #f2f2f2;
+}
+
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+nav a.active {
+    background-color: blue;
+    color: #f2f2f2;
+}
+
+nav button {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav button:hover {
+    background-color: aqua;
+    color: black;
+}
+
+nav button.active {
+    background-color: blue;
+    color: #f2f2f2;
+}
+
+nav a.extras {
+    float: right;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/input.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../JavaScript/modify.js" defer></script>
+    <title>Modify Team</title>
+</head>
+<body id="body" onload="submitEvent('teams'), getTeamNames()">
+    <nav>
+        <a href="../">Home</a>
+        <a href="./modify.html">Modify</a>
+        <a class="active" href="./team-change.html">Teams</a>
+        <a href="./player-change.html">Players</a>
+        <a href="./schedule-change.html">Schedule</a>
+    </nav>
+    <h1>Modify Team Data</h1>
+    <p id="output"></p>
+    <form class="modifyForm" id="inputForm">
+        <p class="formHeader">What data are you modifying?</p>
+        <datalist id="teamList"></datalist>
+        <label for="name">Name:</label>
+        <input type="radio" id="name" name="modifyType" value="name" onclick="teamLevel1('Name')" />
+        <label for="record">Record:</label>
+        <input type="radio" id="record" name="modifyType" value="record" onclick="teamLevel1('Record')" />
+        <label for="logo">Logo:</label>
+        <input type="radio" id="logo" name="modifyType" value="logo" onclick="teamLevel1('Logo')" />
+        <label for="location">Location:</label>
+        <input type="radio" id="location" name="modifyType" value="location" onclick="teamLevel1('Location')" />
+        <div class="toggleDiv" id="level1"></div>
+        <div class="toggleDiv" id="level2"></div>
+    </form>
+</body>
+</html>

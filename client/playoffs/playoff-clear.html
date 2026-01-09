@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/playoff.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../JavaScript/playoff.js" defer></script>
+    <title>Clear</title>
+</head>
+<body>
+    <nav>
+        <a href="../">Home</a>
+        <a href="./bracket.html">Playoff Bracket</a>
+        <a href="./set-round-1.html">Set Round 1</a>
+        <a href="./playoff-game.html">Current Game</a>
+        <a href="./round-result.html">Round Results</a>
+        <a href="./champions.html">Champions</a>
+        <a class="active" href="./playoff-clear.html">Clear</a>
+    </nav>
+    <div id="message">
+        <p>To clear playoff data, click <span id="link" onclick="clearData(), clearPlayoffCookies()">here</span></p>
+    </div>
+    <div id="result">
+        <p>Playoff data has been cleared</p>
+    </div>
+</body>
+</html>

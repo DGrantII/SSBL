@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/input.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="../JavaScript/modify.js" defer></script>
+    <title>Modify Player</title>
+</head>
+<body onload="submitEvent('schedule')">
+    <nav>
+        <a href="../">Home</a>
+        <a href="./modify.html">Modify</a>
+        <a href="./team-change.html">Teams</a>
+        <a href="./player-change.html">Players</a>
+        <a class="active" href="./schedule-change.html">Schedule</a>
+    </nav>
+    <h1>Modify Schedule data</h1>
+    <p id="output"></p>
+    <form class="modifyForm" id="inputForm">
+        <label for="weekNumber">Week Number:</label>
+        <input type="number" id="weekNumber" name="weekNumber" required />
+        <label for="gameNumber">Game Number:</label>
+        <input type="number" id="gameNumber" name="gameNumber" required /><br /><br />
+        <label for="home">Home:</label>
+        <input type="radio" id="home" name="result" value="H" required />
+        <label for="away">Away:</label>
+        <input type="radio" id="away" name="result" value="A" required />
+        <label for="default">Default:</label>
+        <input type="radio" id="default" name="result" value="D" required /><br /><br />
+        <input type="hidden" id="imageCheck" name="imageCheck" value="false" />
+        <input type="submit" name="submit" />
+    </form>
+</body>
+</html>

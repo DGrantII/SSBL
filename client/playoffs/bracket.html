@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/bracket.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="../JavaScript/bracket.js" defer></script>
+    <title>Playoff Bracket</title>
+</head>
+<body id="body">
+    <nav>
+        <a href="../">Home</a>
+        <a href="./bracket.html" class="active">Playoff Bracket</a>
+        <a href="./set-round-1.html">Set Round 1</a>
+        <a href="./playoff-game.html">Current Game</a>
+        <a href="./round-result.html">Round Results</a>
+        <a href="./champions.html">Champions</a>
+        <a href="./playoff-clear.html">Clear</a>
+        <a onclick="progress()">PDF</a>
+    </nav>
+    <div id="mainWrapper">
+        <div class="secondWrapper">
+            <div class="thirdWrapper">
+                <img id="1" src="../images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="16" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="thirdWrapper">
+                <img id="8" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="9" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="thirdWrapper">
+                <img id="5" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="12" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="thirdWrapper">
+                <img id="4" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="13" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+        </div>
+
+        <div class="secondWrapper">
+            <div class="filler1"></div>
+            <div class="thirdWrapper">
+                <img id="R1-G1" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="R1-G2" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="filler2"></div>
+            <div class="thirdWrapper">
+                <img id="R1-G3" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="R1-G4" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="filler1"></div>
+        </div>
+
+        <div class="secondWrapper">
+            <div class="filler3"></div>
+            <div class="thirdWrapper">
+                <img id="R2-G1" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="R2-G2" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="filler5"></div>
+            <div class="mvpWrapper">
+                <p id="mvp1" class="mvpTextWrapper1">MVP 1</p>
+            </div>
+            <div class="mvpWrapper">
+                <p id="mvp3" class="mvpTextWrapper1">MVP 3</p>
+            </div>
+            <div class="mvpWrapper">
+                <p id="mvp5" class="mvpTextWrapper1">MVP 5</p>
+            </div>
+            <div class="filler5"></div>
+        </div>
+
+
+        <div class="secondWrapper">
+            <div class="filler2"></div>
+            <div class="thirdWrapper">
+                <img class="defaultTrophy" id="champions" src="http://localhost:3000/images/Trophy.png" />
+                <img id="Semis-G1" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="Semis-G2" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="filler4"></div>
+            <div class="thirdWrapper">
+                <img class="defaultTrophy" id="mvpChampions" src="http://localhost:3000/images/Trophy.png" />
+                <img id="Elites" src="http://localhost:3000/images/Elites.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="AllStars" src="http://localhost:3000/images/AllStars.png" />
+            </div>
+            <div class="filler5"></div>
+        </div>
+
+
+        <div class="secondWrapper">
+            <div class="filler3"></div>
+            <div class="thirdWrapper">
+                <img id="R2-G3" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="R2-G4" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="filler5"></div>
+            <div class="mvpWrapper">
+                <p id="mvp2" class="mvpTextWrapper2">MVP 2</p>
+            </div>
+            <div class="mvpWrapper">
+                <p id="mvp4" class="mvpTextWrapper2">MVP 4</p>
+            </div>
+            <div class="mvpWrapper">
+                <p id="mvp6" class="mvpTextWrapper2">MVP 6</p>
+            </div>
+            <div class="filler5"></div>
+        </div>
+
+        <div class="secondWrapper">
+            <div class="filler1"></div>
+            <div class="thirdWrapper">
+                <img id="R1-G5" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="R1-G6" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="filler2"></div>
+            <div class="thirdWrapper">
+                <img id="R1-G7" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="R1-G8" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="filler1"></div>
+        </div>
+
+        <div class="secondWrapper">
+            <div class="thirdWrapper">
+                <img id="2" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="15" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="thirdWrapper">
+                <img id="7" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="10" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="thirdWrapper">
+                <img id="6" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="11" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+            <div class="thirdWrapper">
+                <img id="3" src="http://localhost:3000/images/QuestionMark.png" />
+                <div class="textWrapper"><p>V.S</p></div>
+                <img id="14" src="http://localhost:3000/images/QuestionMark.png" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

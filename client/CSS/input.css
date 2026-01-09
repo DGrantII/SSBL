@@ -1,0 +1,129 @@
+* { box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 6px;
+}
+
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[list=teams], input[list=players] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+input[type='submit'], input[type=reset] {
+	padding: 10px 15px;
+    font-size: 15px;
+	cursor: pointer;
+    background-color: rgb(0, 0, 255);
+    color: white;
+    border: none;
+    box-shadow: 0 5px rgb(150, 150, 150);
+    border-radius: 15px;
+}
+input[type='submit']:hover, input[type=reset]:hover {
+	background-color: rgba(0, 0, 255, 0.7);
+}
+input[type='submit']:active, input[type=reset]:active {
+	box-shadow: 0 4px rgb(100, 100, 100);
+    transform: translateY(2px);
+}
+
+form {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 60%;
+}
+
+div#leftTeam, div#rightTeam {
+    padding: 5px;
+    float: left;
+    width: 50%;
+}
+
+div#buttons{
+    padding: 5px;
+    float: none;
+    clear: both;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p > a {
+    color: blue;
+}
+
+p > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Radio button styles */
+input[type=radio] {
+    --s: 1em; /* control the size */
+    --c: blue; /* the active color */
+
+    height: var(--s);
+    aspect-ratio: 1;
+    border: calc(var(--s)/8) solid #939393;
+    padding: calc(var(--s)/8);
+    background: radial-gradient(farthest-side,var(--c) 94%,#0000) 50%/0 0 no-repeat content-box;
+    border-radius: 50%;
+    outline-offset: calc(var(--s)/10);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: .3s;
+    margin-left: 0px;
+    margin-right: 5px;
+}
+
+input[type=radio]:checked {
+    border-color: var(--c);
+    background-size: 100% 100%;
+}
+
+/* Styles for the modification pages */
+form.modifyForm {
+    font-size: 1.5em;
+}
+
+div.toggleDiv {
+    float: none;
+}
+
+label {
+    margin-right: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* styles for the archive pdf */
+html, body {
+    height: 100%;
+}
+
+object {
+    height: 100%;
+    width: 100%;
+}

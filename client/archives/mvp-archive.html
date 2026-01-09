@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/table.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JavaScript/archive.js"></script>
+    <title>MVPs</title>
+</head>
+<body onload="getTableArchives('mvps')">
+    <nav>
+        <a href="../">Home</a>
+        <a href="./archives.html">Archives</a>
+        <a href="./champion-archive.html">Champions</a>
+        <a class="active" href="./mvp-archive.html">MVPs</a>
+        <a href="./playoff-archive.html">Playoffs</a>
+        <a href="./schedule-archive.html">Schedule</a>
+        <a href="./team-archive.html">Teams</a>
+        <a href="./player-archive.html">Players</a>
+        <a href="./old-teams.html">Old Teams</a>
+    </nav>
+    <table class="center" id="archiveTable">
+        <tbody id="output"></tbody>
+    </table>
+</body>
+</html>

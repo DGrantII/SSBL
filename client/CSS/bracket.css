@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+div#mainWrapper {
+    width: 100%;
+    height: 90vh;
+}
+
+div.secondWrapper {
+    float: left;
+    width: calc(100% / 7);
+    height: 100%;
+}
+
+div.thirdWrapper {
+    position: relative;
+    width: 100%;
+    height: 25%;
+}
+
+div.filler1 {
+    width: 100%;
+    height: 12.5%;
+}
+
+div.filler2 {
+    width: 100%;
+    height: 25%;
+}
+
+div.filler3 {
+    width: 100%;
+    height: 37.5%;
+}
+
+div.filler3-1 {
+    width: 100%;
+    height: calc(100% / 3);
+}
+
+div.filler4 {
+    width: 100%;
+    height: 18.75%;
+}
+
+div.filler5 {
+    width: 100%;
+    height: 6.25%;
+}
+
+div.mvpWrapper {
+    position: relative;
+    width: 100%;
+    height: calc(25% / 3);
+}
+
+img {
+    float: left;
+    display: block;
+    max-width: 40%;
+    max-height: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.textWrapper {
+    float: left;
+    width: 20%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+p.mvpTextWrapper1 {
+    position: absolute;
+    right: 5px;
+}
+
+p.mvpTextWrapper2 {
+    position: absolute;
+    left: 5px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+img.defaultTrophy {
+    display: none;
+}
+
+img.trophyLeft {
+    float: none;
+    height: 35%;
+    width: auto;
+    position: absolute;
+    left: 5%;
+    top: 0;
+}
+
+img.trophyRight {
+    float: none;
+    height: 35%;
+    width: auto;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}

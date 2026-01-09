@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/input.css" />
+    <link rel="stylesheet" href="../CSS/lock-mvps.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../JavaScript/lock-mvps.js" defer></script>
+    <title>Lock MVPs</title>
+</head>
+<body>
+    <nav>
+        <a href="../">Home</a>
+        <a class="active" href="./lock-mvps.html">Offseason</a>
+        <a href="./trade.html">Trade</a>
+        <a href="./all-teams.html">All Teams</a>
+        <a href="./reset-season.html">Reset Season</a>
+        <a href="./free-agents.html">Free Agents</a>
+    </nav>
+    <div id="message">
+        <p>The SSBL Off-Season is here!</p>
+        <p>To begin, click <span id="link" onclick="lockMVP()">here</span> to lock the MVPs</p>
+    </div>
+    <div id="finished">
+        <p>MVPs have already been locked.</p>
+        <p>Proceed to trading teams.</p>
+    </div>
+    <div id="form">
+        <p id="prompt">Enter the three MVPs from the Champion's Battle</p>
+        <div id="result">
+            
+        </div>
+        <form id="inputForm">
+            <input class="mvps" name="mvp1" list="players" placeholder="MVP 1" required />
+            <input class="mvps" name="mvp2" list="players" placeholder="MVP 2" required />
+            <input class="mvps" name="mvp3" list="players" placeholder="MVP 3" required />
+            <br /><br />
+            <input type="submit" name="submit" value="Submit" />
+            <datalist id="players"></datalist>
+        </form>
+    </div>
+</body>
+</html>
